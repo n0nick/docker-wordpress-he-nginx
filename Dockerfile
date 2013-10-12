@@ -40,6 +40,7 @@ ADD http://he.wordpress.org/wordpress-3.6.1-he_IL.tar.gz /wordpress.tar.gz
 RUN tar xvzf /wordpress.tar.gz -C /usr/share/nginx
 RUN mv /usr/share/nginx/www/5* /usr/share/nginx/wordpress
 RUN rm -rf /usr/share/nginx/www
+RUN mv /usr/share/nginx/wordpress/wp-config-sample.php /usr/share/nginx/wordpress/wp-config.php
 RUN mv /usr/share/nginx/wordpress /usr/share/nginx/www
 RUN chown -R www-data:www-data /usr/share/nginx/www
 
