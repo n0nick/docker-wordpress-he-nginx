@@ -1,6 +1,6 @@
-# docker-wordpress-nginx
+# docker-wordpress-he-nginx
 
-A Dockerfile that installs the latest wordpress, nginx, php-apc and php-fpm.
+A Dockerfile that installs wordpress 3.6.1 Hebrew version, nginx, php-apc and php-fpm.
 
 NB: A big thanks to [jbfink](https://github.com/jbfink/docker-wordpress) who did most of the hard work on the wordpress parts!
 
