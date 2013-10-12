@@ -1,5 +1,5 @@
 FROM ubuntu
-MAINTAINER Eugene Ware <eugene@noblesamurai.com>
+MAINTAINER Sagie Maoz <sagie@maoz.info>
 RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get -y upgrade
@@ -36,7 +36,7 @@ RUN /usr/bin/easy_install supervisor
 ADD ./supervisord.conf /etc/supervisord.conf
 
 # Install Wordpress
-ADD http://wordpress.org/latest.tar.gz /wordpress.tar.gz
+ADD http://he.wordpress.org/wordpress-3.6.1-he_IL.tar.gz /wordpress.tar.gz
 RUN tar xvzf /wordpress.tar.gz -C /usr/share/nginx
 RUN mv /usr/share/nginx/www/5* /usr/share/nginx/wordpress
 RUN rm -rf /usr/share/nginx/www
